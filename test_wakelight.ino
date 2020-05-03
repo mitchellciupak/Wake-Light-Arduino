@@ -40,7 +40,7 @@ void loop() {
 		}
 		
 		setRGB(r,g,b);
-		delay(10); //miliseconds
+		delay(3570); //miliseconds //Delayed to work for 15 minutes
 	}
 	
 
