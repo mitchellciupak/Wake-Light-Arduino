@@ -4,7 +4,7 @@
 
 #include "FastLED.h"
 
-#define NUM_LEDS 60
+#define NUM_LEDS 150
 #define DATA_PIN 2
 #define CLOCK_PIN 13
 
@@ -21,10 +21,7 @@ void loop() {
 }
 
 void sunrise() {
-  // total sunrise length, in minutes
-  static const uint8_t sunriseLength = 30;
-  
-  // 7 seconds x 256 gradient steps = 1,792 seconds = ~30 minutes
+  static const uint8_t sunriseLength = 5; //(min)
   static const uint8_t interval = (sunriseLength * 60) / 256;
 
   // current gradient palette color index
